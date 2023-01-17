@@ -1,0 +1,55 @@
+@import url("./DialogButton.css");
+
+.dialog-box {
+    width: calc(50dvw + 25px);
+    height: calc(30dvh + 25px);
+    font-family: "Quicksand", sans-serif;
+
+    position: fixed;
+    left: calc(50dvw - (50dvw + 25px) / 2);
+    top: calc(50dvh - (30dvh + 25px) / 2);
+    padding: 1rem;
+
+    &::backdrop {
+        background: hsl(0 0% 10% / 0.25);
+    }
+
+    &[open] {
+        display: grid;
+
+        border-radius: 2rem;
+        border: none;
+        align-items: flex-end;
+    }
+
+    & > h1 {
+        font-weight: 500;
+        font-size: 4rem;
+
+        margin-left: 2rem;
+    }
+}
+
+.ToDo-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+
+    & > label {
+        font-size: 1.5rem;
+    }
+}
+
+#name-validation {
+    color: red;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+#todo-input {
+    font-size: 2rem;
+    width: 100%;
+}

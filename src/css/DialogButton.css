@@ -1,0 +1,33 @@
+#form-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    gap: 5px;
+}
+
+#add-button {
+    font-size: 2rem;
+    color: white;
+
+    width: 7rem;
+    height: 4rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    background: hsl(220, 85%, 54%);
+}
+
+#close-button {
+    font-size: 2rem;
+    color: white;
+
+    width: 7rem;
+    height: 4rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    background: rgba(0, 0, 0, 0.15);
+}
